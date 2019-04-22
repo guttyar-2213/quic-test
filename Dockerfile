@@ -1,2 +1,2 @@
 FROM abiosoft/caddy
-CMD /usr/bin/caddy -version
+CMD echo "$(/usr/bin/caddy -version)"
