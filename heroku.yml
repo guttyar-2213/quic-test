@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: /app/main ¢PORT 
+  web: /app/main $PORT
