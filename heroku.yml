@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: "/usr/bin/caddy -port $PORT -conf Caddyfile"
+  web: "/usr/bin/caddy -quic -agree --conf Caddyfile --log stdout $@ -port $PORT"
