@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: /app/main $PORT
+  web: /usr/bin/caddy -port $PORT -quic -agree --log stdout
