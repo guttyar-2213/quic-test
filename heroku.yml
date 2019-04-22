@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: /usr/bin/caddy -port $PORT
+  web: /usr/bin/caddy -port $PORT && cat Caddyfile
